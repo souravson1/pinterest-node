@@ -8,8 +8,8 @@
             <img class="w-full h-full object-cover" src="/images/uploads/<%= user.profileImage %>" alt="">
         </div>
         <h1 class="text-3xl font-semibold"><%= user.name %></h1>
-        <h3 class="text-xl">@<%= user.username %></h3>
-        <a href="/edit" class="px-7 py-2 mt-5 bg-red-700 rounded-full">Edit</a>
+        <div class="text-xl flex items-center gap-1"><img src="./images/logo.png" class="w-4 h-4 grayscale" alt=""> <p class="text-sm text-muted"><%= user.username %></p></div>
+        <a href="/edit" class="px-7 py-2 mt-5 bg-red-700 rounded-full">Edit Profile</a>
         <a href="/add" class="px-7 py-2 rounded-full bg-zinc-100 text-black mt-2">Add New Post</a>
     </div>
     <div class="cards flex flex-wrap gap-10 px-10 py-10">
